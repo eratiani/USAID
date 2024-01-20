@@ -7,8 +7,6 @@ import { DesktopComponent } from './header/navigation/desktop/desktop.component'
 import { MobileComponent } from './header/navigation/mobile/mobile.component';
 import { BurgerComponent } from './header/navigation/mobile/burger/burger.component';
 
-
-
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -16,10 +14,9 @@ import { BurgerComponent } from './header/navigation/mobile/burger/burger.compon
     NavigationComponent,
     DesktopComponent,
     MobileComponent,
-    BurgerComponent
+    BurgerComponent,
   ],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
+  exports: [HeaderComponent, FooterComponent],
 })
-export class CoreModule { }
+export class CoreModule {}
