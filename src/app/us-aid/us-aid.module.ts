@@ -9,6 +9,7 @@ import { SliderItemComponent } from './slider/slider-item/slider-item.component'
 import { QuestionsComponent } from './questions/questions.component';
 import { QuestionItemComponent } from './questions/question-item/question-item.component';
 import { AnswerComponent } from './questions/answer/answer.component';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { AnswerComponent } from './questions/answer/answer.component';
     QuestionItemComponent,
     AnswerComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, CoreModule],
   exports: [ViewComponent],
 })
 export class UsAidModule {}

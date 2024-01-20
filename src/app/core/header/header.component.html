@@ -1,1 +1,15 @@
-<p>header works!</p>
+<div
+  [ngClass]="{
+    ' scrolled': widowPosY > 84 && windowWidth > 768,
+    ' hidden': widowPosY > 184 && windowWidth < 768
+  }"
+  class="container__header"
+>
+  <a class="header__logo--link"
+    ><img
+      src="../../../assets/tbc-logo.svg"
+      alt="tbc logo"
+      class="header__logo--img"
+  /></a>
+  <app-navigation></app-navigation>
+</div>

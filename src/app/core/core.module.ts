@@ -6,8 +6,7 @@ import { NavigationComponent } from './header/navigation/navigation.component';
 import { DesktopComponent } from './header/navigation/desktop/desktop.component';
 import { MobileComponent } from './header/navigation/mobile/mobile.component';
 import { BurgerComponent } from './header/navigation/mobile/burger/burger.component';
-
-
+import { NavMobileComponent } from './header/navigation/mobile/nav-mobile/nav-mobile.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +15,10 @@ import { BurgerComponent } from './header/navigation/mobile/burger/burger.compon
     NavigationComponent,
     DesktopComponent,
     MobileComponent,
-    BurgerComponent
+    BurgerComponent,
+    NavMobileComponent,
   ],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
+  exports: [HeaderComponent, FooterComponent],
 })
-export class CoreModule { }
+export class CoreModule {}
