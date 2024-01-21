@@ -1,8 +1,26 @@
 <div class="container__burger">
-  <div #burgerContainer class="burger__menu" (click)="onBurgerClick()">
-    <div #burgerBefore class="burger__before"></div>
-    <div #burgerCenter class="burger__center"></div>
-    <div #burgerAfter class="burger__after"></div>
+  <div
+    #burgerContainer
+    [ngClass]="{ 'burger__rotate--main': isBurgerTogled }"
+    class="burger__menu"
+    (click)="onBurgerClick()"
+  >
+    <div
+      [ngClass]="{ 'burger__rotate--before': isBurgerTogled }"
+      class="burger__before"
+    ></div>
+    <div
+      [ngClass]="{ 'bg__burger--lines': isBurgerTogled }"
+      class="burger__center"
+    ></div>
+    <div
+      [ngClass]="{ 'burger__rotate--after': isBurgerTogled }"
+      class="burger__after"
+    ></div>
   </div>
-  <div #overlay class="overlay" (click)="onOverlayClick()"></div>
+  <div
+    class="overlay"
+    [ngClass]="{ 'overlay--active': isBurgerTogled }"
+    (click)="onOverlayClick()"
+  ></div>
 </div>

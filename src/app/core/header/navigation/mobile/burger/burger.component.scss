@@ -47,13 +47,14 @@
     position: fixed;
     top: 0;
     left: 0;
+    pointer-events: none;
     transition: opacity 2.3s ease;
   }
 }
 .burger__rotate--main {
   transform: rotate(-45deg);
 }
-.burger__rotate__before {
+.burger__rotate--before {
   background-color: rgba(118, 118, 118, 1) !important;
   transform: rotate(-90deg) translateX(4px);
 }
@@ -64,6 +65,7 @@
 .bg__burger--lines {
   background-color: rgba(118, 118, 118, 1) !important;
 }
-.overlay__active {
+.overlay--active {
+  pointer-events: auto !important;
   opacity: 1 !important;
 }
