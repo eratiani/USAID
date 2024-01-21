@@ -1,8 +1,16 @@
 .container__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 69px;
+  padding-left: 6.25vw;
+  padding-right: 6.25vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: transform 0.33s ease-in-out, opacity 0.33s ease-in-out;
+  background-color: rgb(34, 34, 34);
   .header__logo--link {
     display: block;
     width: 160px;
@@ -10,6 +18,31 @@
     cursor: pointer;
     .header__logo--img {
       max-width: 100%;
+      height: 100%;
     }
   }
+  @media (min-width: 1440px) {
+    height: 110px;
+
+    font-size: 18px;
+    .header__logo--link {
+      width: 200px;
+      height: 49px;
+    }
+  }
+  @media (min-width: 1960px) {
+    height: 130px;
+
+    font-size: 18px;
+    .header__logo--link {
+      width: 300px;
+      height: 149px;
+    }
+  }
+}
+.scrolled {
+  opacity: 0.95;
+}
+.hidden {
+  transform: translateY(-100%);
 }
