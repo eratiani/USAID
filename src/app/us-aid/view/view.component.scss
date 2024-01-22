@@ -1,8 +1,14 @@
 @use "../../../styles.scss" as mainStyle;
 
 .container__main {
-  padding-left: 6.25vw;
-  padding-right: 6.25vw;
-  padding-top: 86px;
+  // padding-left: 6.25vw;
+  // padding-right: 6.25vw;
+  margin-top: 69px;
   background-color: mainStyle.$header_footer_color;
+  @media (min-width: 1440px) {
+    margin-top: 110px;
+  }
+  @media (min-width: 1960px) {
+    margin-top: 130px;
+  }
 }

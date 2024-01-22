@@ -4,6 +4,8 @@
   background-color: mainStyle.$header_footer_color;
   display: grid;
   font-size: #{mainStyle.$primary_font-size * 7}px;
+  padding-left: 6.25vw;
+  padding-right: 6.25vw;
   //   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, auto);
   grid-template-areas:
