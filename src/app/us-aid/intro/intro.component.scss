@@ -10,7 +10,7 @@
     .intro--header {
       position: absolute;
       top: 10%;
-      left: 10%;
+      left: 2.54%;
       color: white;
       font-size: 22px;
       line-height: 1.6em;
@@ -18,6 +18,9 @@
       flex-direction: column;
       .one {
         font-size: 24px;
+      }
+      .two {
+        width: 300px;
       }
     }
     @media (min-width: 375px) {
@@ -29,28 +32,41 @@
     @media (min-width: 768px) {
       height: 520px;
       .intro--header {
-        top: 10%;
-        left: 10%;
+        top: 30%;
+        font-size: 42px;
+        .one {
+          font-size: 44px;
+        }
+        .two {
+          width: auto;
+        }
+      }
+    }
+    @media (min-width: 1024px) {
+      height: 695px;
+      .intro--header {
+        font-size: 52px;
+        .one {
+          font-size: 54px;
+        }
+      }
+    }
+    @media (min-width: 1440px) {
+      height: 975px;
+      .intro--header {
+        top: 35%;
+        left: 16%;
         font-size: 62px;
         .one {
           font-size: 64px;
         }
       }
     }
-    @media (min-width: 1024px) {
-      height: 695px;
-    }
-    @media (min-width: 1440px) {
-      height: 975px;
-    }
-    @media (min-width: 1960px) {
-      height: 1330px;
-    }
   }
   .container__description {
     background-color: mainStyle.$secondary_color;
     .container__description--content {
-      width: 80%;
+      width: 95.7vw;
       margin: 0 auto;
       font-size: 16px;
       color: #f4f4f4;
@@ -79,9 +95,12 @@
     }
     @media (min-width: 1024px) {
       .container__description--content {
-        width: 50%;
-        margin: 0 auto;
         font-size: 28px;
+      }
+    }
+    @media (min-width: 1440px) {
+      .container__description--content {
+        width: 980px;
       }
     }
     @media (min-width: 1960px) {

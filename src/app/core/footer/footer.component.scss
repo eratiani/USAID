@@ -4,8 +4,9 @@
   background-color: mainStyle.$header_footer_color;
   display: grid;
   font-size: #{mainStyle.$primary_font-size * 7}px;
-  padding-left: 6.25vw;
-  padding-right: 6.25vw;
+  width: 95.7vw;
+  margin: 0 auto;
+  padding-top: 25px;
   //   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, auto);
   grid-template-areas:
@@ -124,10 +125,10 @@
     pointer-events: auto !important;
     opacity: 1 !important;
   }
-  @media (min-width: 1440px) {
-    width: 70%;
+  @media (min-width: 1024px) {
+    padding-top: 50px;
     font-size: #{mainStyle.$primary_font-size * 12}px;
-    margin: 0 auto;
+
     grid-template-areas:
       "item1 item3"
       "item5 item5"
@@ -165,5 +166,9 @@
         width: auto;
       }
     }
+  }
+  @media (min-width: 1440px) {
+    width: 980px;
+    margin: 0 auto;
   }
 }

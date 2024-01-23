@@ -1,1 +1,9 @@
-<p>courses works!</p>
+<div class="container--main">
+  <h2 class="courses--header">სასწავლო კურსები</h2>
+  <div class="container--courses">
+    <app-course-item
+      *ngFor="let course of courses"
+      [currCourse]="course"
+    ></app-course-item>
+  </div>
+</div>

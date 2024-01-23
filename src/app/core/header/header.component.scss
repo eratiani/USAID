@@ -4,8 +4,8 @@
   left: 0;
   right: 0;
   height: 69px;
-  padding-left: 6.25vw;
-  padding-right: 6.25vw;
+  padding-left: 2.15vw;
+  padding-right: 2.15vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +20,13 @@
     .header__logo--img {
       max-width: 100%;
       height: 100%;
+    }
+  }
+  @media (min-width: 1024px) {
+    height: 84px;
+    .header__logo--link {
+      width: 182px;
+      height: 40px;
     }
   }
   @media (min-width: 1440px) {

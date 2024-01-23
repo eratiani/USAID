@@ -1,0 +1,25 @@
+.container--main {
+  .courses--header {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+  }
+  .container--courses {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    place-items: center;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 1440px) {
+    width: 980px;
+    margin: 0 auto;
+    .courses--header {
+      text-align: start;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@use "../../../../styles.scss" as mainStyles;
+.container--course {
+  width: 87.5vw;
+  height: 289.39px;
+  --bg-gradient: none;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid solid solid solid;
+  border-color: rgba(85, 85, 85, 1) rgba(85, 85, 85, 1) rgba(85, 85, 85, 1)
+    rgba(85, 85, 85, 1);
+  border-radius: 6px 6px 6px 6px;
+  overflow: hidden;
+  transform: translateZ(0);
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  padding: 1px;
+  position: relative;
+
+  .container--img {
+    width: 100%;
+    height: 140px;
+    border-radius: 6px 6px 6px 6px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .container__course--text {
+    .course--description {
+      font-size: 14px;
+    }
+    margin-left: 15px;
+  }
+  .container--btn {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    .course__details--btn {
+      display: block;
+      text-decoration: none;
+      color: mainStyles.$btn-active;
+      cursor: pointer;
+
+      margin-left: 41px;
+      position: relative;
+    }
+    .course__details--btn::before {
+      content: url("../../../../assets/arrow-course-item.svg");
+      cursor: auto;
+      position: absolute;
+      left: -26px;
+      top: 50%;
+      width: 16px;
+      height: 13px;
+      transform: translateY(-50%);
+    }
+  }
+  @media (min-width: 1024px) {
+    font-size: 18px;
+    width: 300px;
+    height: 414px;
+    .container--img {
+      height: 150px;
+    }
+    .container__course--text {
+      .course--description {
+        font-size: 17px;
+      }
+    }
+    .container--btn {
+      bottom: 35px;
+    }
+  }
+}
