@@ -10,6 +10,7 @@ import { QuestionsComponent } from './questions/questions.component';
 import { QuestionItemComponent } from './questions/question-item/question-item.component';
 import { AnswerComponent } from './questions/answer/answer.component';
 import { CoreModule } from '../core/core.module';
+import { LazyLoadingDirective } from '../core/directives/lazy-loading.directive';
 
 @NgModule({
   declarations: [

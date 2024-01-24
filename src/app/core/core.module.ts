@@ -8,6 +8,7 @@ import { MobileComponent } from './header/navigation/mobile/mobile.component';
 import { BurgerComponent } from './header/navigation/mobile/burger/burger.component';
 import { NavMobileComponent } from './header/navigation/mobile/nav-mobile/nav-mobile.component';
 import { TermsComponent } from './footer/terms/terms.component';
+import { LazyLoadingDirective } from './directives/lazy-loading.directive';
 
 @NgModule({
   declarations: [
@@ -19,8 +20,9 @@ import { TermsComponent } from './footer/terms/terms.component';
     BurgerComponent,
     NavMobileComponent,
     TermsComponent,
+    LazyLoadingDirective,
   ],
   imports: [CommonModule],
-  exports: [HeaderComponent, FooterComponent],
+  exports: [HeaderComponent, FooterComponent, LazyLoadingDirective],
 })
 export class CoreModule {}

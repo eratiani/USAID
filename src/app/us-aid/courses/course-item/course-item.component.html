@@ -1,6 +1,8 @@
 <div class="container--course">
   <div class="container--img">
     <img
+      appLazyLoading
+      [imgSrc]="'../../../../assets/{{ currCourse.imgName }}'"
       src="../../../../assets/{{ currCourse.imgName }}"
       alt="{{ currCourse.courseName }}"
       class="course--img"
