@@ -10,7 +10,7 @@
     .intro--header {
       position: absolute;
       top: 10%;
-      left: 2.54%;
+      left: 6.25vw;
       color: white;
       font-size: 22px;
       line-height: 1.6em;
@@ -53,20 +53,23 @@
     }
     @media (min-width: 1440px) {
       height: 975px;
+      display: flex;
+      align-items: center;
       .intro--header {
-        top: 35%;
-        left: 16%;
-        font-size: 62px;
-        .one {
-          font-size: 64px;
-        }
+        position: static;
+        margin: 0 auto;
+        width: 980px;
+        // font-size: 62px;
+        // .one {
+        //   font-size: 64px;
+        // }
       }
     }
   }
   .container__description {
     background-color: mainStyle.$secondary_color;
     .container__description--content {
-      width: 95.7vw;
+      width: 87.5vw;
       margin: 0 auto;
       font-size: 16px;
       color: #f4f4f4;

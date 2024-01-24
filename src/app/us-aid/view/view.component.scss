@@ -1,8 +1,7 @@
 @use "../../../styles.scss" as mainStyle;
 
 .container__main {
-  // padding-left: 6.25vw;
-  // padding-right: 6.25vw;
+  overflow: hidden;
   margin-top: 69px;
   background-color: mainStyle.$header_footer_color;
   @media (min-width: 1440px) {

@@ -12,6 +12,12 @@
     place-items: center;
 
     @media (min-width: 1024px) {
+      width: 87.5vw;
+      margin: 0 auto;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 1440px) {
+      width: 980px;
       grid-template-columns: repeat(3, 1fr);
     }
   }
