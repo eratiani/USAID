@@ -4,6 +4,11 @@
   overflow: hidden;
   margin-top: 69px;
   background-color: mainStyle.$header_footer_color;
+  .container__main__view {
+    .container--slider {
+      background-color: mainStyle.$secondary_color;
+    }
+  }
   @media (min-width: 1440px) {
     margin-top: 84px;
   }

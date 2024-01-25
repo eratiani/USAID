@@ -1,8 +1,11 @@
 .container--main {
+  padding-bottom: 50px;
   .courses--header {
+    width: 85.7vw;
+    margin: 25px auto;
     font-size: 24px;
     color: white;
-    text-align: center;
+    text-align: start;
   }
   .container--courses {
     width: 100%;

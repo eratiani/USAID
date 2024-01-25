@@ -7,12 +7,12 @@ import { ISliderDto } from '../dto/slider.dto';
 export class SliderService {
   sliders: ISliderDto[] = [
     { imgSrc: '../../../../assets/usaid.png', id: 1 },
-    { imgSrc: '../../../../assets/usaid.png', id: 2 },
-    { imgSrc: '../../../../assets/usaid.png', id: 3 },
-    { imgSrc: '../../../../assets/usaid.png', id: 4 },
-    { imgSrc: '../../../../assets/usaid.png', id: 5 },
-    { imgSrc: '../../../../assets/usaid.png', id: 6 },
-    { imgSrc: '../../../../assets/usaid.png', id: 7 },
+    { imgSrc: '../../../../assets/space-Int.png', id: 2 },
+    { imgSrc: '../../../../assets/tinet.png', id: 3 },
+    { imgSrc: '../../../../assets/tegeta.png', id: 4 },
+    { imgSrc: '../../../../assets/spectre.png', id: 5 },
+    { imgSrc: '../../../../assets/tbc-lizing.png', id: 6 },
+    { imgSrc: '../../../../assets/ufc.png', id: 7 },
   ];
   constructor() {}
   getSliderItems() {
