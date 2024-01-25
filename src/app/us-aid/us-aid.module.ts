@@ -11,6 +11,8 @@ import { QuestionItemComponent } from './questions/question-item/question-item.c
 import { AnswerComponent } from './questions/answer/answer.component';
 import { CoreModule } from '../core/core.module';
 import { LazyLoadingDirective } from '../core/directives/lazy-loading.directive';
+import { ButtonsComponent } from './slider/buttons/buttons.component';
+import { DotsComponent } from './slider/dots/dots.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { LazyLoadingDirective } from '../core/directives/lazy-loading.directive'
     QuestionsComponent,
     QuestionItemComponent,
     AnswerComponent,
+    ButtonsComponent,
+    DotsComponent,
   ],
   imports: [CommonModule, CoreModule],
   exports: [ViewComponent],

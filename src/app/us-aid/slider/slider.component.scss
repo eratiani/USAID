@@ -1,0 +1,36 @@
+.container--slider {
+  width: 87.5vw;
+  margin: 0 auto;
+  color: white;
+  overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .sub-container__slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 100vw;
+    .slider--buttons {
+      position: absolute;
+    }
+    .slider--dots {
+      position: absolute;
+    }
+  }
+  @media (min-width: 1440px) {
+    width: 980px;
+    .sub-container__slider {
+      .sub-container__slider--items {
+        gap: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

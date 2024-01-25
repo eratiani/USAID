@@ -127,16 +127,14 @@
   }
   @media (min-width: 1024px) {
     padding-top: 50px;
+    padding-left: 5px;
     font-size: #{mainStyle.$primary_font-size * 12}px;
 
     grid-template-areas:
       "item1 item3"
       "item5 item5"
       "item4 item2";
-    #item1 {
-      width: 200px;
-      height: 50px;
-    }
+
     #item2 {
       width: 100%;
       display: flex;
@@ -151,8 +149,8 @@
     #item3 {
       justify-content: flex-end;
       a {
-        height: 50px;
-        width: 50px;
+        height: 39px;
+        width: 39px;
         &:last-child {
           margin-right: 0;
         }

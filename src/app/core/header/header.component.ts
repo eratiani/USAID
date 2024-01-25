@@ -20,8 +20,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.windowPosYSub = this.scrollServ.scrollPosition.subscribe(
       (val) => (this.widowPosY = val)
     );
+
     this.windowWidthSub = this.scrollServ.screenWidth.subscribe(
-      (val) => (this.widowPosY = val)
+      (val) => (this.windowWidth = val)
     );
   }
   ngOnDestroy(): void {

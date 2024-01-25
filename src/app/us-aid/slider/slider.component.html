@@ -1,1 +1,17 @@
-<p>slider works!</p>
+<div class="container--slider">
+  <h2 class="slider--header">პროექტის პარტნიორები</h2>
+  <div class="sub-container__slider">
+    <app-buttons class="slider--buttons"></app-buttons>
+    <ng-container *ngFor="let slider of sliders; let i = index">
+      <ng-container *ngIf="i % 3 === 0">
+        <div class="sub-container__slider--items">
+          <app-slider-item
+            *ngFor="let subSlider of sliders.slice(i, i + 3)"
+            [currSlider]="subSlider"
+          ></app-slider-item>
+        </div>
+      </ng-container>
+    </ng-container>
+    <app-dots class="slider--dots"></app-dots>
+  </div>
+</div>

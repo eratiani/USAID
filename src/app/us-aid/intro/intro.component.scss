@@ -59,10 +59,6 @@
         position: static;
         margin: 0 auto;
         width: 980px;
-        // font-size: 62px;
-        // .one {
-        //   font-size: 64px;
-        // }
       }
     }
   }
@@ -98,6 +94,12 @@
     }
     @media (min-width: 1024px) {
       .container__description--content {
+        p {
+          padding-left: 5px;
+        }
+        a {
+          padding-left: 5px;
+        }
         font-size: 28px;
       }
     }

@@ -18,16 +18,6 @@
   a:hover {
     color: mainStyle.$btn-active;
   }
-  @media (min-width: 1440px) {
-    a {
-      font-size: #{mainStyle.$primary_font-size * 14}px;
-    }
-  }
-  @media (min-width: 1960px) {
-    a {
-      font-size: #{mainStyle.$primary_font-size * 18}px;
-    }
-  }
 }
 .active {
   color: mainStyle.$btn-active !important;

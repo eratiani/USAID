@@ -58,6 +58,22 @@
       transform: translateY(-50%);
     }
   }
+  @media (min-width: 768px) {
+    font-size: 18px;
+    width: auto;
+    height: 414px;
+    .container--img {
+      height: 150px;
+    }
+    .container__course--text {
+      .course--description {
+        font-size: 17px;
+      }
+    }
+    .container--btn {
+      bottom: 35px;
+    }
+  }
   @media (min-width: 1024px) {
     font-size: 18px;
     width: 300px;
