@@ -25,6 +25,8 @@ export class SliderComponent implements OnInit, OnDestroy {
   windowWidthSub!: Subscription;
   private activeIndex: number = 0;
   private intervalId!: any;
+  private startX: number = 0;
+  private slideCount = 0;
   constructor(
     private sliderServ: SliderService,
     private resizeServ: ResizeListenerService
@@ -77,6 +79,31 @@ export class SliderComponent implements OnInit, OnDestroy {
     this.sliders = this.tempSlider.slice(Number(val) * 3);
     this.restartInterval();
   }
+
+  onMouseDown(event: MouseEvent) {
+    this.slideCount = 1;
+    this.startX = event.clientX;
+  }
+
+  onMouseMove(event: MouseEvent) {
+    if (this.startX === 0 || this.slideCount !== 1) return;
+    this.slideCount += 1;
+    const currPos = event.clientX;
+    const deltaX = currPos - this.startX;
+    if (deltaX >= 1) {
+      this.nextSlide();
+      this.restartInterval();
+    } else if (deltaX <= -1) {
+      this.prevSlide();
+      this.restartInterval();
+    }
+  }
+
+  onMouseUp() {
+    this.slideCount = 0;
+    this.startX = 0;
+  }
+
   private startInterval() {
     this.intervalId = setInterval(() => {
       this.nextSlide();

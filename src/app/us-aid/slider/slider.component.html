@@ -5,7 +5,12 @@
     (sliderBtnClick)="handleButtonClick($event)"
     class="slider--buttons"
   ></app-buttons>
-  <div class="sub-container__slider">
+  <div
+    class="sub-container__slider"
+    (mousedown)="onMouseDown($event)"
+    (mousemove)="onMouseMove($event)"
+    (mouseup)="onMouseUp()"
+  >
     <ng-container *ngFor="let slider of sliders.slice(0, 3)">
       <app-slider-item
         [currSlider]="slider"
