@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
-import { TermsService } from '../services/terms.service';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+
+import { TermsService } from '../services/terms.service';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
 })
-export class FooterComponent {
-  isTermsClicked: boolean = false;
+export class FooterComponent implements OnInit, OnDestroy {
+  isTermsClicked = false;
   termsSub!: Subscription;
   constructor(private termsServ: TermsService) {}
   ngOnInit(): void {

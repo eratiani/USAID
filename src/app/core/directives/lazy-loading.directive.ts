@@ -1,10 +1,10 @@
-import { Directive, ElementRef, Input, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, Input, OnInit, Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[appLazyLoading]',
 })
-export class LazyLoadingDirective {
-  @Input() imgSrc: string = '';
+export class LazyLoadingDirective implements OnInit {
+  @Input() imgSrc = '';
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   ngOnInit() {

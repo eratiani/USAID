@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+
 import { ISliderDto } from '../../shared/dto/slider.dto';
 
 @Component({

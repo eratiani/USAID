@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+
 import { IQuestionDto } from '../../shared/dto/qustion.dto';
 
 @Component({
@@ -7,7 +8,7 @@ import { IQuestionDto } from '../../shared/dto/qustion.dto';
   styleUrls: ['./question-item.component.scss'],
 })
 export class QuestionItemComponent {
-  isFullHeight: boolean = false;
+  isFullHeight = false;
   @Input() currQuestion!: IQuestionDto;
   onToggle() {
     this.isFullHeight = !this.isFullHeight;

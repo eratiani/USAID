@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+
 import { IQuestionDto } from '../dto/qustion.dto';
 
 @Injectable({
@@ -62,7 +63,6 @@ export class QuestionService {
       id: 8,
     },
   ];
-  constructor() {}
   getQuestions() {
     return [...this.questions];
   }

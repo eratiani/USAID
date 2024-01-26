@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+
 import { BurgerService } from 'src/app/core/services/burger.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { BurgerService } from 'src/app/core/services/burger.service';
   styleUrls: ['./mobile.component.scss'],
 })
 export class MobileComponent implements OnInit, OnDestroy {
-  isBurgerClicked: boolean = false;
+  isBurgerClicked = false;
   burgerSub!: Subscription;
   constructor(private burgerServ: BurgerService) {}
   ngOnInit(): void {

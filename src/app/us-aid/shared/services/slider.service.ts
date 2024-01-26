@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+
 import { ISliderDto } from '../dto/slider.dto';
 
 @Injectable({
@@ -14,7 +15,6 @@ export class SliderService {
     { imgSrc: '../../../../assets/tbc-lizing.png', id: 6 },
     { imgSrc: '../../../../assets/ufc.png', id: 7 },
   ];
-  constructor() {}
   getSliderItems() {
     return [...this.sliders];
   }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { ViewComponent } from './view/view.component';
 import { IntroComponent } from './intro/intro.component';
 import { CoursesComponent } from './courses/courses.component';
@@ -10,7 +11,6 @@ import { QuestionsComponent } from './questions/questions.component';
 import { QuestionItemComponent } from './questions/question-item/question-item.component';
 import { AnswerComponent } from './questions/answer/answer.component';
 import { CoreModule } from '../core/core.module';
-import { LazyLoadingDirective } from '../core/directives/lazy-loading.directive';
 import { ButtonsComponent } from './slider/buttons/buttons.component';
 import { DotsComponent } from './slider/dots/dots.component';
 

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+
 import { IcourseDto } from '../dto/course.dto';
 
 @Injectable({
@@ -61,7 +62,6 @@ export class CoursesService {
       id: 9,
     },
   ];
-  constructor() {}
   getCourseItem(id: number) {
     return this.courseItems.filter((item) => item.id === id)[0];
   }

@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ResizeListenerService } from '../../services/resize-listener.service';
 import { Subscription } from 'rxjs';
+
+import { ResizeListenerService } from '../../services/resize-listener.service';
 
 @Component({
   selector: 'app-navigation',

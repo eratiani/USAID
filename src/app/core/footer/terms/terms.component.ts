@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { TermsService } from '../../services/terms.service';
 
 @Component({

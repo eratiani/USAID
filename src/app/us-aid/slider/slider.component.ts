@@ -1,9 +1,10 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { trigger, transition, style, animate } from '@angular/animations';
+import { Subscription } from 'rxjs';
+
 import { SliderService } from '../shared/services/slider.service';
 import { ISliderDto } from '../shared/dto/slider.dto';
-import { trigger, transition, style, animate } from '@angular/animations';
 import { ResizeListenerService } from 'src/app/core/services/resize-listener.service';
-import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
@@ -23,9 +24,9 @@ export class SliderComponent implements OnInit, OnDestroy {
   tempSlider: ISliderDto[] = [];
   pageSize!: number;
   windowWidthSub!: Subscription;
-  private activeIndex: number = 0;
-  private intervalId!: any;
-  private startX: number = 0;
+  private activeIndex = 0;
+  private intervalId!: ReturnType<typeof setInterval>;
+  private startX = 0;
   private slideCount = 0;
   constructor(
     private sliderServ: SliderService,

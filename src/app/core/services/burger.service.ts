@@ -6,5 +6,4 @@ import { Subject } from 'rxjs';
 })
 export class BurgerService {
   toggleBurgerSubject: Subject<boolean> = new Subject<boolean>();
-  constructor() {}
 }

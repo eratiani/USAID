@@ -1,11 +1,6 @@
-import {
-  Component,
-  ElementRef,
-  OnDestroy,
-  OnInit,
-  ViewChild,
-} from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+
 import { BurgerService } from 'src/app/core/services/burger.service';
 
 @Component({
@@ -14,7 +9,7 @@ import { BurgerService } from 'src/app/core/services/burger.service';
   styleUrls: ['./burger.component.scss'],
 })
 export class BurgerComponent implements OnInit, OnDestroy {
-  isBurgerTogled: boolean = false;
+  isBurgerTogled = false;
   burgerSub!: Subscription;
   constructor(private burgerServ: BurgerService) {}
   ngOnInit(): void {

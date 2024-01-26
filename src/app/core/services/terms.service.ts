@@ -6,5 +6,4 @@ import { Subject } from 'rxjs';
 })
 export class TermsService {
   toggleTermsSubject: Subject<boolean> = new Subject<boolean>();
-  constructor() {}
 }
