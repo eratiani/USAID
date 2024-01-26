@@ -1,8 +1,8 @@
-<div class="container--questions">
+<section class="container--questions">
   <h2 class="questions--header">ხშირად დასმული კითხვები</h2>
   <app-question-item
     *ngFor="let question of questions.slice(0, 3)"
     [currQuestion]="question"
   ></app-question-item>
   <a class="questions--link">ყველა კითხვა</a>
-</div>
+</section>
