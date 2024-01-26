@@ -7,9 +7,9 @@
   ></app-buttons>
   <div
     class="sub-container__slider"
-    (mousedown)="onMouseDown($event)"
-    (mousemove)="onMouseMove($event)"
-    (mouseup)="onMouseUp()"
+    (touchstart)="onMouseDown($event)"
+    (touchmove)="onMouseMove($event)"
+    (touchend)="onMouseUp()"
   >
     <ng-container *ngFor="let slider of sliders.slice(0, 3)">
       <app-slider-item

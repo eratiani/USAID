@@ -80,16 +80,16 @@ export class SliderComponent implements OnInit, OnDestroy {
     this.restartInterval();
   }
 
-  onMouseDown(event: MouseEvent) {
+  onMouseDown(event: TouchEvent) {
     this.slideCount = 1;
-    this.startX = event.clientX;
+    this.startX = event.touches[0].clientX;
   }
 
-  onMouseMove(event: MouseEvent) {
+  onMouseMove(event: TouchEvent) {
     if (this.startX === 0 || this.slideCount !== 1) return;
     this.slideCount += 1;
-    const currPos = event.clientX;
-    const deltaX = currPos - this.startX;
+    const currTouchX = event.touches[0].clientX;
+    const deltaX = currTouchX - this.startX;
     if (deltaX >= 1) {
       this.nextSlide();
       this.restartInterval();
