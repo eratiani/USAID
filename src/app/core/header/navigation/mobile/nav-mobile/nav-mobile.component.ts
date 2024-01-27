@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { BurgerService } from 'src/app/core/services/burger.service';
@@ -9,7 +9,7 @@ import { IsActiveService } from 'src/app/core/services/is-active.service';
   templateUrl: './nav-mobile.component.html',
   styleUrls: ['./nav-mobile.component.scss'],
 })
-export class NavMobileComponent {
+export class NavMobileComponent implements OnInit, OnDestroy {
   currActivePage!: string;
   isActiveSub!: Subscription;
   constructor(

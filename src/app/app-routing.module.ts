@@ -6,12 +6,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HomeViewComponent } from './home/home-view/home-view.component';
 import { TbcItViewComponent } from './tbc-it/tbc-it-view/tbc-it-view.component';
 import { RiskViewComponent } from './risk/risk-view/risk-view.component';
+import { AllQuestionsViewComponent } from './all-questions/all-questions-view/all-questions-view.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/USAID', pathMatch: 'full' },
   { path: 'USAID', component: ViewComponent },
   { path: 'home', component: HomeViewComponent },
   { path: 'tbc-it', component: TbcItViewComponent },
+  { path: 'usaid-faq', component: AllQuestionsViewComponent },
   { path: 'risk', component: RiskViewComponent },
   { path: '**', component: PageNotFoundComponent },
 ];

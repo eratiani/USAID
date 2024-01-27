@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { ViewComponent } from './view/view.component';
 import { IntroComponent } from './intro/intro.component';
@@ -28,7 +29,7 @@ import { DotsComponent } from './slider/dots/dots.component';
     ButtonsComponent,
     DotsComponent,
   ],
-  imports: [CommonModule, CoreModule],
+  imports: [CommonModule, CoreModule, RouterModule],
   exports: [ViewComponent],
 })
 export class UsAidModule {}

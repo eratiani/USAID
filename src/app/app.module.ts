@@ -9,6 +9,8 @@ import { UsAidModule } from './us-aid/us-aid.module';
 import { HomeModule } from './home/home.module';
 import { TbcItModule } from './tbc-it/tbc-it.module';
 import { RiskModule } from './risk/risk.module';
+import { AllQuestionsModule } from './all-questions/all-questions.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent],
@@ -20,6 +22,8 @@ import { RiskModule } from './risk/risk.module';
     HomeModule,
     TbcItModule,
     RiskModule,
+    AllQuestionsModule,
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
