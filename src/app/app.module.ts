@@ -11,6 +11,7 @@ import { TbcItModule } from './tbc-it/tbc-it.module';
 import { RiskModule } from './risk/risk.module';
 import { AllQuestionsModule } from './all-questions/all-questions.module';
 import { CoreModule } from './core/core.module';
+import { UsaidAboutModule } from './usaid-about/usaid-about.module';
 
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent],
@@ -24,6 +25,7 @@ import { CoreModule } from './core/core.module';
     RiskModule,
     AllQuestionsModule,
     CoreModule,
+    UsaidAboutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

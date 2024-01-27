@@ -14,6 +14,7 @@ import { AnswerComponent } from './questions/answer/answer.component';
 import { CoreModule } from '../core/core.module';
 import { ButtonsComponent } from './slider/buttons/buttons.component';
 import { DotsComponent } from './slider/dots/dots.component';
+import { QuestionDetailComponent } from './courses/course-item/question-detail/question-detail.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { DotsComponent } from './slider/dots/dots.component';
     AnswerComponent,
     ButtonsComponent,
     DotsComponent,
+    QuestionDetailComponent,
   ],
   imports: [CommonModule, CoreModule, RouterModule],
   exports: [ViewComponent],
