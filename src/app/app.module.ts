@@ -6,6 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UsAidModule } from './us-aid/us-aid.module';
+import { HomeModule } from './home/home.module';
+import { TbcItModule } from './tbc-it/tbc-it.module';
+import { RiskModule } from './risk/risk.module';
 
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent],
@@ -14,6 +17,9 @@ import { UsAidModule } from './us-aid/us-aid.module';
     AppRoutingModule,
     UsAidModule,
     BrowserAnimationsModule,
+    HomeModule,
+    TbcItModule,
+    RiskModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

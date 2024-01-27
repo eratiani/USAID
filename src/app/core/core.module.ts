@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -23,7 +24,7 @@ import { LazyLoadingDirective } from './directives/lazy-loading.directive';
     TermsComponent,
     LazyLoadingDirective,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   exports: [HeaderComponent, FooterComponent, LazyLoadingDirective],
 })
 export class CoreModule {}

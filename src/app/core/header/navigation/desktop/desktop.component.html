@@ -1,15 +1,31 @@
 <nav>
   <ul class="nav__mobile--ul">
-    <a class="nav__mobile--a">
+    <a
+      routerLink="/home"
+      [ngClass]="{ ' active': currActivePage === 'home' }"
+      class="nav__mobile--a"
+    >
       <li class="nav__mobile--li">მთავარი</li>
     </a>
-    <a class="nav__mobile--a">
+    <a
+      routerLink="/tbc-it"
+      [ngClass]="{ ' active': currActivePage === 'tbc-it' }"
+      class="nav__mobile--a"
+    >
       <li class="nav__mobile--li">TBC IT</li>
     </a>
-    <a class="nav__mobile--a active">
+    <a
+      routerLink="/"
+      [ngClass]="{ ' active': currActivePage === 'usAid' }"
+      class="nav__mobile--a active"
+    >
       <li class="nav__mobile--li">TBC x USAID</li>
     </a>
-    <a class="nav__mobile--a">
+    <a
+      routerLink="/risk"
+      [ngClass]="{ ' active': currActivePage === 'risk' }"
+      class="nav__mobile--a"
+    >
       <li class="nav__mobile--li">რისკები</li>
     </a>
   </ul>
