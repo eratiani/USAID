@@ -1,0 +1,35 @@
+.container--main {
+  padding-bottom: 50px;
+  .courses--header {
+    width: 85.7vw;
+    margin: 25px auto;
+    font-size: 24px;
+    color: white;
+    text-align: start;
+  }
+  .container--courses {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    place-items: center;
+    @media (min-width: 768px) {
+      width: 87.5vw;
+      margin: 0 auto;
+      grid-template-columns: repeat(2, 300px);
+    }
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 1440px) {
+      width: 980px;
+    }
+  }
+  @media (min-width: 1440px) {
+    width: 980px;
+    margin: 0 auto;
+    .courses--header {
+      text-align: start;
+    }
+  }
+}

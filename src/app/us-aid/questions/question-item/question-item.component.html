@@ -1,0 +1,23 @@
+<div
+  [ngClass]="{ ' heightAuto': isFullHeight }"
+  class="container__question--item"
+>
+  <h2 (click)="onToggle()" class="question">{{ currQuestion.question }}</h2>
+
+  <div (click)="onToggle()" class="question--arrow">
+    <img
+      [ngClass]="{ ' translate': isFullHeight }"
+      src="../../../../assets/arrow-questions.svg"
+      alt="arrow"
+      class="arrow"
+    />
+  </div>
+  <p class="question--answer">{{ currQuestion.answer }}</p>
+  <ul *ngIf="currQuestion.answerList" class="question--ul">
+    <app-answer
+      *ngFor="let answerList of currQuestion.answerList"
+      [answer]="answerList"
+    ></app-answer>
+  </ul>
+  <p class="warning">{{ currQuestion.warning }}</p>
+</div>

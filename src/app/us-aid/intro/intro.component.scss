@@ -1,0 +1,119 @@
+@use "../../../styles.scss" as mainStyle;
+.container__intro {
+  .container--image {
+    width: 100%;
+    height: 217px;
+    background-image: url(../../../assets/group.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .intro--header {
+      position: absolute;
+      top: 10%;
+      left: 6.25vw;
+      color: white;
+      font-size: 22px;
+      line-height: 1.6em;
+      display: flex;
+      flex-direction: column;
+      .one {
+        font-family: "Helvetica-W01-Bold";
+        font-size: 24px;
+      }
+      .two {
+        width: 300px;
+      }
+    }
+    @media (min-width: 375px) {
+      height: 254px;
+    }
+    @media (min-width: 425px) {
+      height: 288px;
+    }
+    @media (min-width: 768px) {
+      height: 520px;
+      .intro--header {
+        top: 30%;
+        font-size: 42px;
+        .one {
+          font-size: 44px;
+        }
+        .two {
+          width: auto;
+        }
+      }
+    }
+    @media (min-width: 1024px) {
+      height: 695px;
+      .intro--header {
+        font-size: 52px;
+        .one {
+          font-size: 54px;
+        }
+      }
+    }
+    @media (min-width: 1440px) {
+      height: 975px;
+      display: flex;
+      align-items: center;
+      .intro--header {
+        position: static;
+        margin: 0 auto;
+        width: 980px;
+      }
+    }
+  }
+  .container__description {
+    background-color: mainStyle.$secondary_color;
+    .container__description--content {
+      width: 87.5vw;
+      margin: 0 auto;
+      font-size: 16px;
+      color: #f4f4f4;
+      padding-top: 1vw;
+      .intro--btn {
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        color: mainStyle.$btn-active;
+        padding: 20px 0;
+        transition: color 0.33s ease-in-out;
+      }
+      .intro--btn:hover {
+        color: #f4f4f4;
+      }
+    }
+
+    @media (min-width: 425px) {
+      .container__description--content {
+        font-size: 18px;
+      }
+    }
+    @media (min-width: 768px) {
+      .container__description--content {
+        font-size: 22px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .container__description--content {
+        p {
+          padding-left: 5px;
+        }
+        a {
+          padding-left: 5px;
+        }
+        font-size: 28px;
+      }
+    }
+    @media (min-width: 1440px) {
+      .container__description--content {
+        width: 980px;
+      }
+    }
+    @media (min-width: 1960px) {
+      .container__description--content {
+        font-size: 38px;
+      }
+    }
+  }
+}

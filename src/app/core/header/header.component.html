@@ -1,0 +1,17 @@
+<header
+  [ngClass]="{
+    ' scrolled': widowPosY > 84 && windowWidth > 768,
+    ' hidden': windowWidth <= 768 && !isScrollingUp && widowPosY > 70
+  }"
+  class="container__header"
+>
+  <div class="container__navigation">
+    <a routerLink="/USAID" class="header__logo--link"
+      ><img
+        src="../../../assets/tbc-logo.svg"
+        alt="tbc logo"
+        class="header__logo--img"
+    /></a>
+    <app-navigation></app-navigation>
+  </div>
+</header>

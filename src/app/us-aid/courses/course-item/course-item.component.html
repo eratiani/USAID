@@ -1,0 +1,20 @@
+<div class="container--course">
+  <div class="container--img">
+    <img
+      appLazyLoading
+      [imgSrc]="'../../../../assets/' + currCourse.imgName"
+      src="../../../../assets/{{ currCourse.imgName }}"
+      alt="{{ currCourse.courseName }}"
+      class="course--img"
+    />
+  </div>
+  <div class="container__course--text">
+    <h2 class="course--title">{{ currCourse.courseName }}</h2>
+    <p class="course--description">{{ currCourse.courseStatus }}</p>
+  </div>
+  <div class="container--btn">
+    <a routerLink="{{ currCourse.courseName }}" class="course__details--btn"
+      >კურსის დეტალები</a
+    >
+  </div>
+</div>

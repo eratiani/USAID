@@ -1,0 +1,41 @@
+@use "../../../../styles.scss" as mainStyle;
+.container__terms {
+  padding: 5%;
+  color: rgb(140, 140, 140);
+  height: 100vh;
+  font-size: #{mainStyle.$primary_font-size * 7}px;
+  overflow-y: scroll;
+  .termx__x--btn {
+    text-align: end;
+    cursor: pointer;
+    font-size: #{mainStyle.$primary_font-size * 10}px;
+  }
+  .terms--header {
+    font-size: #{mainStyle.$primary_font-size * 10.5}px;
+    margin-bottom: 10px;
+  }
+  .terms--links {
+    display: inline-block;
+    color: rgb(140, 140, 140);
+  }
+  .terms__close--btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    margin-bottom: 15px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 5px;
+    transition: all 0.33s ease-in;
+  }
+  .terms__close--btn:hover {
+    background-color: rgb(0, 174, 243);
+  }
+  @media (min-width: 1440px) {
+    font-size: #{mainStyle.$primary_font-size * 14}px;
+    .terms--header {
+      font-size: #{mainStyle.$primary_font-size * 18}px;
+    }
+  }
+}

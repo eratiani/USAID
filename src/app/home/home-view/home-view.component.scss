@@ -1,0 +1,20 @@
+@use "../../../styles.scss" as mainStyle;
+
+.container__main {
+  overflow: hidden;
+  margin-top: 69px;
+  background-color: mainStyle.$header_footer_color;
+  .warning {
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  @media (min-width: 1440px) {
+    margin-top: 84px;
+    .warning {
+      font-size: 40px;
+    }
+  }
+}

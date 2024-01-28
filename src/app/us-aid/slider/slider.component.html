@@ -1,0 +1,22 @@
+<div class="container--slider">
+  <h2 class="slider--header">პროექტის პარტნიორები</h2>
+  <app-buttons
+    *ngIf="pageSize >= 768"
+    (sliderBtnClick)="handleButtonClick($event)"
+    class="slider--buttons"
+  ></app-buttons>
+  <div
+    class="sub-container__slider"
+    (touchstart)="onMouseDown($event)"
+    (touchmove)="onMouseMove($event)"
+    (touchend)="onMouseUp()"
+  >
+    <ng-container *ngFor="let slider of sliders.slice(0, 3)">
+      <app-slider-item
+        [currSlider]="slider"
+        [@slideAnimation]="activeState"
+      ></app-slider-item>
+    </ng-container>
+  </div>
+  <app-dots (dotClicked)="changeSlide($event)" class="slider--dots"></app-dots>
+</div>

@@ -1,0 +1,13 @@
+.container--dots {
+  display: flex;
+  justify-content: space-between;
+  width: 54px;
+  height: 6px;
+  .span-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+  }
+}

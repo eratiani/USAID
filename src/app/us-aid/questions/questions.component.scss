@@ -1,0 +1,35 @@
+@use "../../../styles.scss" as mainStyles;
+.container--questions {
+  width: 84.375vw;
+  margin: 0 auto;
+  padding: 30px 5px 20px 5px;
+  color: white;
+  position: relative;
+  .questions--link {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: mainStyles.$btn-active;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transition: color 0.33s ease-in-out;
+    &:hover {
+      color: rgb(170, 170, 170);
+    }
+  }
+  @media (min-width: 768px) {
+    padding-bottom: 50px;
+    .questions--link {
+      position: absolute;
+      top: 50px;
+      margin: 0;
+      right: 0;
+    }
+  }
+  @media (min-width: 1440px) {
+    width: 980px;
+    margin: 0 auto;
+  }
+}
