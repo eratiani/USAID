@@ -20,6 +20,7 @@ export class HeaderComponent implements OnInit, OnDestroy, AfterViewInit {
   windowWidth!: number;
   windowPosYSub!: Subscription;
   windowWidthSub!: Subscription;
+  isScrollingUp!: boolean;
   constructor(
     private scrollServ: ResizeListenerService,
     private isActiveServ: IsActiveService,
@@ -29,9 +30,10 @@ export class HeaderComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnInit(): void {
     this.widowPosY = this.scrollServ.getScrollPosition();
     this.windowWidth = this.scrollServ.getScreenWidth();
-    this.windowPosYSub = this.scrollServ.scrollPosition.subscribe(
-      (val) => (this.widowPosY = val)
-    );
+    this.windowPosYSub = this.scrollServ.scrollPosition.subscribe((val) => {
+      this.widowPosY = val.current;
+      this.isScrollingUp = val.isScrollingUp;
+    });
 
     this.windowWidthSub = this.scrollServ.screenWidth.subscribe(
       (val) => (this.windowWidth = val)

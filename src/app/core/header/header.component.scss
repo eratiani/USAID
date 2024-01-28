@@ -1,3 +1,5 @@
+@use "../../../styles.scss" as mainStyle;
+
 .container__header {
   position: fixed;
   top: 0;
@@ -5,7 +7,7 @@
   right: 0;
   height: 69px;
   width: 100%;
-  background-color: rgb(34, 34, 34);
+  background-color: mainStyle.$header_footer_color;
   z-index: 1;
   transition: transform 0.33s ease-in-out, opacity 0.33s ease-in-out;
 

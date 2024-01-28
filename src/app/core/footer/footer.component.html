@@ -1,49 +1,52 @@
-<footer class="container__footer">
-  >
-  <div id="item1">
-    <a class="footer__logo--link"
-      ><img
-        appLazyLoading
-        [imgSrc]="'../../../assets/tbc.png'"
-        src="../../../assets/tbc.png"
-        alt="tbc logo"
-        class="footer__logo--img"
-    /></a>
-  </div>
-  <div id="item2" class="footer__btn--container">
-    <a href="mailto:itacademy@tbcbank.com.ge" class="footer--btn">მოგვწერეთ</a>
-  </div>
+<footer class="footer">
+  <div class="container__footer">
+    <div id="item1">
+      <a class="footer__logo--link"
+        ><img
+          appLazyLoading
+          [imgSrc]="'../../../assets/tbc.png'"
+          src="../../../assets/tbc.png"
+          alt="tbc logo"
+          class="footer__logo--img"
+      /></a>
+    </div>
+    <div id="item2" class="footer__btn--container">
+      <a href="mailto:itacademy@tbcbank.com.ge" class="footer--btn"
+        >მოგვწერეთ</a
+      >
+    </div>
 
-  <div id="item3" class="footer__btn--container">
-    <a href="https://www.facebook.com/tbcbank/" class="footer__icon--1"
-      ><img src="../../../assets/fb.png" alt="fb" class="footer__icon--img1"
-    /></a>
-    <a
-      href="https://www.youtube.com/channel/UCGk9R2LV2ywOL80r8Xc6xtQ"
-      class="footer__icon--2"
-      ><img
-        src="../../../assets/youtube.png"
-        alt="youtube"
-        class="footer__icon--img2"
-    /></a>
+    <div id="item3" class="footer__btn--container">
+      <a href="https://www.facebook.com/tbcbank/" class="footer__icon--1"
+        ><img src="../../../assets/fb.png" alt="fb" class="footer__icon--img1"
+      /></a>
+      <a
+        href="https://www.youtube.com/channel/UCGk9R2LV2ywOL80r8Xc6xtQ"
+        class="footer__icon--2"
+        ><img
+          src="../../../assets/youtube.png"
+          alt="youtube"
+          class="footer__icon--img2"
+      /></a>
+    </div>
+    <div id="item4" class="footer__btn--container">
+      <a class="footer__rules--btn" (click)="onTermsClick()"
+        >წესები და პირობები</a
+      >
+    </div>
+    <div id="item5" class="footer__btn--container">
+      <p class="footer--paragraph">
+        <span class="footer--span">© 2023</span> ყველა უფლება დაცულია
+      </p>
+    </div>
+    <app-terms
+      class="footer--terms"
+      [ngClass]="{ 'terms--active': isTermsClicked }"
+    ></app-terms>
+    <div
+      class="overlay"
+      [ngClass]="{ 'overlay--active': isTermsClicked }"
+      (click)="onOverlayClick()"
+    ></div>
   </div>
-  <div id="item4" class="footer__btn--container">
-    <a class="footer__rules--btn" (click)="onTermsClick()"
-      >წესები და პირობები</a
-    >
-  </div>
-  <div id="item5" class="footer__btn--container">
-    <p class="footer--paragraph">
-      <span class="footer--span">© 2023</span> ყველა უფლება დაცულია
-    </p>
-  </div>
-  <app-terms
-    class="footer--terms"
-    [ngClass]="{ 'terms--active': isTermsClicked }"
-  ></app-terms>
-  <div
-    class="overlay"
-    [ngClass]="{ 'overlay--active': isTermsClicked }"
-    (click)="onOverlayClick()"
-  ></div>
 </footer>
